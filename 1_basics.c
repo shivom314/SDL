@@ -8,10 +8,10 @@ int main(int argc, char** argv) {
 	// 1 | Initiate SDL
 	SDL_Init(SDL_INIT_EVERYTHING);
 
-	// 2 | making window
+	// 2 | making window (paper)
 	SDL_Window* window1 = SDL_CreateWindow("mytitle", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WINDOWWIDTH, WINDOWHEIGHT, SDL_WINDOW_RESIZABLE | SDL_WINDOW_OPENGL | SDL_WINDOW_SKIP_TASKBAR);
 
-	// 3 | Renderer
+	// 3 | Renderer (pen)
 	SDL_Renderer* renderer1 = SDL_CreateRenderer(window1, -1, SDL_RENDERER_ACCELERATED);
 
 	// 4 | setting color of pen
@@ -31,5 +31,5 @@ int main(int argc, char** argv) {
 	SDL_DestroyWindow(window1);
 	SDL_Quit();
 
-	
+
 }
